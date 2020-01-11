@@ -1,0 +1,26 @@
+body {
+    font-family: sans-serif;
+}
+h1 {
+    font: 700 40px sans-serif;
+    color: #fff;
+    @media (min-width: 1024px) {
+        font-size: 60px;
+    }
+}
+h2 {
+    font: 700 20px sans-serif;
+    color: #000;
+    margin: 20px 0;
+
+    @media (min-width: 1024px) {
+        font-size: 40px;
+        margin: 40px 0;
+        text-align: center;
+    }
+}
+h3 {
+    font: 18px sans-serif;
+    color: #000;
+    margin: 20px 0 10px;
+}

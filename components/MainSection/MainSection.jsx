@@ -1,11 +1,43 @@
+import React from 'react';
+import YouTube from 'react-youtube';
 import style from './style.scss'
 
-const MainSection = () => <div>
-    <iframe
-        className={style['main-section_video']}
-        src={`https://www.youtube.com/embed/TeRcQ3GS2wk`}
-        frameBorder="0"
-    />
-</div>;
+class MainSection extends React.Component {
+    render() {
+        const opts = {
+            playerVars: {
+                autoplay: 1,
+                controls: 0,
+                frameborder: 0,
+                allowfullscreen: 1,
+                showinfo: 0,
+                rel: 0,
+                loop: 1,
+                start: 0
+            }
+        };
+
+        return (
+            <div className={style['main-section']}>
+                <h1 className={style['main-section_title']}>Скверу быть</h1>
+                <div className={style['main-section_video-background']}>
+                    <YouTube
+                        videoId="TeRcQ3GS2wk"
+                        opts={opts}
+                        containerClassName={style['main-section_video-container']}
+                        className={style['main-section_video']}
+                        onReady={this._onReady}
+                    />
+                </div>
+            </div>
+        );
+    }
+
+    _onReady(event) {
+        // event.target.pauseVideo();
+        event.target.setVolume(0);
+        event.target.playVideo();
+    }
+}
 
 export default MainSection;

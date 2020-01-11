@@ -1,0 +1,27 @@
+.press-section {
+    padding: 0 20px;
+
+    @media (min-width: 1024px) {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    &_item {
+        margin-bottom: 30px;
+        display: block;
+        &:after {
+            content: '';
+            border-bottom: 1px solid #000;
+            padding: 10px 0;
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+        }
+        &:last-child {
+            margin-bottom: 0;
+            &:after {
+                content: none;
+            }
+        }
+    }
+}

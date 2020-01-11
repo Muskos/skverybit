@@ -1,0 +1,17 @@
+.picture-section {
+    &_title {
+        padding: 0 20px;
+    }
+    &_image-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &_image-item {
+        width: 50%;
+    }
+    &_image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
