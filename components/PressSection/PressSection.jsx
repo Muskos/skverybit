@@ -6,6 +6,16 @@ const PressSection = () => <section className={style['press-section']}>
     <h2>Публикации в сми</h2>
     <ul>
         <li className={style['press-section_item']}>
+            <h3>«Часть сквера отдают для строительства дома!» Жители Грушевки вышли на улицу, чтобы «обогреть» деревья, которые могут спилить</h3>
+            <ExternalLink
+                title="Публикация о сквере в onliner"
+                href="https://realt.onliner.by/2020/01/12/skver-12"
+                onClick={() => {
+                    ym('reachGoal', 'open_link_onliner');
+                }}
+            >https://realt.onliner.by/2020/01/12/skver-12</ExternalLink>
+        </li>
+        <li className={style['press-section_item']}>
             <h3>Местные жители надели на деревья в Грушевском парке шарфы. Зачем?</h3>
             <ExternalLink
                 title="Публикация о сквере в citydog"
