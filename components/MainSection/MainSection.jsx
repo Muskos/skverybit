@@ -22,7 +22,7 @@ class MainSection extends React.Component {
                 <h1 className={style['main-section_title']}>Скверу быть</h1>
                 <div className={style['main-section_video-background']}>
                     <YouTube
-                        videoId="TeRcQ3GS2wk"
+                        videoId="O0HeLd4vrdA"
                         opts={opts}
                         containerClassName={style['main-section_video-container']}
                         className={style['main-section_video']}
