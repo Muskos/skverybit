@@ -1,5 +1,5 @@
 import React from 'react';
-import YouTube from 'react-youtube';
+import ReactPlayer from 'react-player'
 import style from './style.scss'
 
 class MainSection extends React.Component {
@@ -16,27 +16,26 @@ class MainSection extends React.Component {
                 start: 0
             }
         };
+        const reactPlayerOptions = {
+            url: 'https://youtu.be/O0HeLd4vrdA',
+            playing: true,
+            muted: true,
+            loop: true,
+            className: 'main-section_video',
+            width: '100%',
+            height: '100%',
+        };
 
         return (
             <div className={style['main-section']}>
                 <h1 className={style['main-section_title']}>Скверу быть</h1>
                 <div className={style['main-section_video-background']}>
-                    <YouTube
-                        videoId="O0HeLd4vrdA"
-                        opts={opts}
-                        containerClassName={style['main-section_video-container']}
-                        className={style['main-section_video']}
-                        onReady={this._onReady}
-                    />
+                    <div className={style['main-section_video-container']}>
+                        <ReactPlayer {...reactPlayerOptions} />
+                    </div>
                 </div>
             </div>
         );
-    }
-
-    _onReady(event) {
-        // event.target.pauseVideo();
-        event.target.setVolume(0);
-        event.target.playVideo();
     }
 }
 

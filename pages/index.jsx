@@ -7,7 +7,7 @@ import PressSection from '../components/PressSection/PressSection';
 import '../style/index.scss';
 import image from './1.jpg';
 
-const YANDEX_METRIKA_ID = 11111;
+const YANDEX_METRIKA_ID = 57001429;
 
 const Index = () => <>
     <YMInitializer
@@ -18,7 +18,6 @@ const Index = () => <>
         <meta name="description" content="Помогите спасти Грушевский сквер. Множество деревьев хотят срубить и построить дом. Только вместе мы сможем остановить их." />
         <meta property="og:title" content="Грушевский сквер в опасности" />
         <meta property="og:image" content={image} />
-        <meta name="yandex-verification" content="1dbf8e59f09efb11" />
         <title>Грушевский сквер в опасности</title>
     </Head>
     <MainSection />
