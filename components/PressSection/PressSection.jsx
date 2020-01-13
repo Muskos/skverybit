@@ -8,6 +8,16 @@ const PressSection = () => <section className={style['press-section']}>
         <li className={style['press-section_item']}>
             <h3>Жыхары Грушаўкі абвязалі дрэвы шалікамі супраць забудовы сквэра. Фотарэпартаж</h3>
             <ExternalLink
+                title="Публикация о сквере в citydog"
+                href="https://citydog.by/post/zaden-gryshevsky-park-problem/"
+                onClick={() => {
+                    ym('reachGoal', 'open_link_citydog');
+                }}
+            >https://citydog.by/post/zaden-gryshevsky-park-problem/</ExternalLink>
+        </li>
+        <li className={style['press-section_item']}>
+            <h3>Жыхары Грушаўкі абвязалі дрэвы шалікамі супраць забудовы сквэра. Фотарэпартаж</h3>
+            <ExternalLink
                 title="Публикация о сквере в svaboda"
                 href="https://www.svaboda.org/a/30373012.html"
                 onClick={() => {
