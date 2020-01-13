@@ -6,7 +6,7 @@ const PressSection = () => <section className={style['press-section']}>
     <h2>Публикации в сми</h2>
     <ul>
         <li className={style['press-section_item']}>
-            <h3>Жыхары Грушаўкі абвязалі дрэвы шалікамі супраць забудовы сквэра. Фотарэпартаж</h3>
+            <h3>Помните шарфы на деревьях в Грушевке? Их больше нет, и вот почему</h3>
             <ExternalLink
                 title="Публикация о сквере в citydog"
                 href="https://citydog.by/post/zaden-gryshevsky-park-problem/"
