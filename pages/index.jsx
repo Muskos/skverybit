@@ -8,12 +8,13 @@ import '../style/index.scss';
 import image from './1.jpg';
 
 const YANDEX_METRIKA_ID = 57001429;
+const isDevelop = process.env.NODE_ENV === 'development';
 
 const Index = () => <>
-    <YMInitializer
+    {!isDevelop && <YMInitializer
         accounts={[YANDEX_METRIKA_ID]}
         options={{ webvisor: false }}
-    />
+    />}
     <Head>
         <meta name="description" content="Помогите спасти Грушевский сквер. Множество деревьев хотят срубить и построить дом. Только вместе мы сможем остановить их." />
         <meta property="og:title" content="Грушевский сквер в опасности" />

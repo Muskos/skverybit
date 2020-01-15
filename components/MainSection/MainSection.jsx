@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactPlayer from 'react-player'
+import ExternalLink from '../ExternalLink/ExternalLink';
 import style from './style.scss'
 
 class MainSection extends React.Component {
@@ -28,7 +29,17 @@ class MainSection extends React.Component {
 
         return (
             <div className={style['main-section']}>
-                <h1 className={style['main-section_title']}>Скверу быть</h1>
+                <div className={style['main-section_content']}>
+                    <h1>Скверу быть</h1>
+                    <h2 className={style['main-section_sub-title']}>Присоединяйтесь в Telegram <br />
+                        <ExternalLink
+                            href="https://t.me/skverubyt"
+                            title="Ссылка на Telegram чат"
+                            onClick={() => {
+                                ym('reachGoal', 'open_telegram_chanel');
+                            }}
+                        >https://t.me/skverubyt</ExternalLink></h2>
+                </div>
                 <div className={style['main-section_video-background']}>
                     <div className={style['main-section_video-container']}>
                         <ReactPlayer {...reactPlayerOptions} />

@@ -22,7 +22,7 @@
         left: 0;
         z-index: -99;
     }
-    &_title {
+    &_content {
         text-align: center;
         padding: 0 20px;
         position: absolute;
@@ -30,6 +30,9 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 1;
+    }
+    &_sub-title {
+        color: #fff;
     }
 }
 
