@@ -27,6 +27,7 @@ class MainSection extends React.Component {
             height: '100%',
         };
 
+
         return (
             <div className={style['main-section']}>
                 <div className={style['main-section_content']}>
