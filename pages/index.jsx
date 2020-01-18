@@ -4,6 +4,8 @@ import MainSection from '../components/MainSection/MainSection';
 import ContactSection from '../components/ContactSection/ContactSection';
 import PictureSection from '../components/PictureSection/PictureSection';
 import PressSection from '../components/PressSection/PressSection';
+import HistorySection from '../components/HistorySection/HistorySection';
+// import EventsSection from '../components/EventsSection/EventsSection';
 import '../style/index.scss';
 import image from './1.jpg';
 
@@ -22,6 +24,8 @@ const Index = () => <>
         <title>Грушевский сквер в опасности</title>
     </Head>
     <MainSection />
+    <HistorySection />
+    {/* <EventsSection /> */}
     <PictureSection />
     <PressSection />
     <ContactSection />

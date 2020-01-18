@@ -1,0 +1,26 @@
+.history-section {
+    max-width: 924px;
+    margin: 0 auto;
+    padding: 0 20px 0 60px;
+    &_container {
+        position: relative;
+    }
+    &_tree {
+        position: absolute;
+        top: 0;
+        right: 100%;
+        transform: translate(-20px);
+        background: linear-gradient(#fff, transparent 20%, transparent 80%, #fff), url(./tree_trunk.png) center repeat-y;
+        height: 100%;
+        width: 200px;
+
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+    &_item {
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
