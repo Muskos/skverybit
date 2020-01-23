@@ -5,6 +5,12 @@ import style from './style.scss';
 const isDevelop = process.env.NODE_ENV === 'development';
 const news = [
     {
+        title: 'Бурная встреча жителей Грушевки с чиновниками после общения с Кочановой: «Это же преступление!»',
+        linkTitle: 'Публикация о сквере в tut.by',
+        onClick: () => ym('reachGoal', 'open_link_tutby'),
+        href: 'https://realty.tut.by/news/building/669862.html',
+    },
+    {
         title: 'Активисты Грушевки ходили в Администрацию президента. Вот что там сказали',
         linkTitle: 'Публикация о сквере в citydog',
         onClick: () => ym('reachGoal', 'open_link_citydog'),
