@@ -11,7 +11,17 @@ const ContactSection = () => <section className={style['contact-section']}>
         onClick={() => {
             ym('reachGoal', 'open_telegram_chanel');
         }}
-    >https://t.me/skverubyt</ExternalLink>
+    >Telegram</ExternalLink>
+    <br /> <br />
+    <p className={style['contact-section_text']}>За новостями можно следить в Viber чате:</p>
+    <ExternalLink
+        href="https://invite.viber.com/?g2=AQBKuET7rc2MBkruMUBObAgBmTzGRRm6JrGe7Vp2vGAB%2FXqiHHSA%2BMeamvcTy%2FTv"
+        title="Ссылка на Viber канал"
+        onClick={() => {
+            ym('reachGoal', 'open_Viber_chanel');
+        }}
+    >Viber</ExternalLink>
+
 </section>
 
 export default ContactSection;

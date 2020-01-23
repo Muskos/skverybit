@@ -1,4 +1,5 @@
 import React from 'react';
+import ym from 'react-yandex-metrika';
 import ReactPlayer from 'react-player'
 import ExternalLink from '../ExternalLink/ExternalLink';
 import style from './style.scss'
@@ -36,9 +37,7 @@ class MainSection extends React.Component {
                         <ExternalLink
                             href="https://t.me/skverubyt"
                             title="Ссылка на Telegram чат"
-                            onClick={() => {
-                                ym('reachGoal', 'open_telegram_chanel');
-                            }}
+                            onClick={() => ym('reachGoal', 'open_telegram_chanel')}
                         >https://t.me/skverubyt</ExternalLink></h2>
                 </div>
                 <div className={style['main-section_video-background']}>
