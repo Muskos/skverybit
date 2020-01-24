@@ -1,9 +1,9 @@
 const withSass = require('@zeit/next-sass');
 const withPlugins = require('next-compose-plugins');
-const withImages = require('next-images');
+const withAssetsImport = require('next-assets-import');
 
 module.exports = withPlugins([
-    [withImages],
+    [withAssetsImport],
     [withSass, {
         cssModules: true,
         devIndicators: {

@@ -9,6 +9,10 @@ import HistorySection from '../components/HistorySection/HistorySection';
 // import EventsSection from '../components/EventsSection/EventsSection';
 import '../style/index.scss';
 import image from './1.jpg';
+import applFavicon from '../favicon/apple-touch-icon.png';
+import favicon from '../favicon/favicon-32x32.png';
+import favicon16 from '../favicon/favicon-16x16.png';
+import faviconSvg from '../favicon/safari-pinned-tab.svg';
 
 const YANDEX_METRIKA_ID = 57001429;
 const isDevelop = process.env.NODE_ENV === 'development';
@@ -26,10 +30,10 @@ const Index = () => <>
         <meta property="og:title" content="Грушевский сквер в опасности" />
         <meta property="og:image" content={image} />
         <title>Грушевский сквер в опасности</title>
-        <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png" />
-        <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5" />
+        <link rel="apple-touch-icon" sizes="180x180" href={applFavicon} />
+        <link rel="icon" type="image/png" sizes="32x32" href={favicon} />
+        <link rel="icon" type="image/png" sizes="16x16" href={favicon16} />
+        <link rel="mask-icon" href={faviconSvg} color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
     </Head>

@@ -5,6 +5,42 @@ import style from './style.scss';
 const isDevelop = process.env.NODE_ENV === 'development';
 const news = [
     {
+        title: '"Мы не хотим здесь эти 5 подъездов!" Местные жители отстаивают Грушевский сквер, но чиновники утверждают, что все "по закону"',
+        linkTitle: 'Публикация о сквере в realt.by',
+        onClick: () => ym('reachGoal', 'open_link_realtby'),
+        href: 'https://realt.by/news/article/26594/',
+    },
+    {
+        title: 'Посмотрите, как перед приездом Кочановой марафетят Грушевку',
+        linkTitle: 'Публикация о сквере в tut.by',
+        onClick: () => ym('reachGoal', 'open_link_tutby'),
+        href: 'https://news.tut.by/society/669979.html',
+    },
+    {
+        title: 'Бацька адказвае ў Маскоўскім раёне за будоўлю, а сын працуе ў кампаніі, якой аддалі пад забудову Грушаўскі сквер',
+        linkTitle: 'Публикация о сквере в Наша Нива',
+        onClick: () => ym('reachGoal', 'open_link_nn'),
+        href: 'https://m.nn.by/articles/244935/',
+    },
+    {
+        title: '«Не вырубать, пока не приживутся новые деревья». Минчане обсудили с чиновниками судьбу Грушевского сквера',
+        linkTitle: 'Публикация о сквере в onliner',
+        onClick: () => ym('reachGoal', 'open_link_onliner'),
+        href: 'https://realt.onliner.by/2020/01/24/grushevskogo-skvera',
+    },
+    {
+        title: 'Бурная встреча жителей Грушевки с чиновниками после общения с Кочановой: «Это же преступление!»',
+        linkTitle: 'Публикация о сквере в tut.by',
+        onClick: () => ym('reachGoal', 'open_link_tutby'),
+        href: 'https://realty.tut.by/news/building/669862.html',
+    },
+    {
+        title: 'Качанава паабяцала пратэстоўцам прыехаць у Грушаўскі сквер',
+        linkTitle: 'Публикация о сквере в Наша Нива',
+        onClick: () => ym('reachGoal', 'open_link_nn'),
+        href: 'https://m.nn.by/articles/244930/',
+    },
+    {
         title: 'Бурная встреча жителей Грушевки с чиновниками после общения с Кочановой: «Это же преступление!»',
         linkTitle: 'Публикация о сквере в tut.by',
         onClick: () => ym('reachGoal', 'open_link_tutby'),
@@ -165,7 +201,10 @@ const news = [
 const PressSection = () => <section className={style['press-section']}>
     <h2>Публикации в сми</h2>
     <ul>
-        {news.map((newsItem => <li className={style['press-section_item']}>
+        {news.map(((newsItem, index) => <li
+            key={index}
+            className={style['press-section_item']}
+        >
             <h3>{newsItem.title}</h3>
             <ExternalLink
                 title={newsItem.linkTitle}

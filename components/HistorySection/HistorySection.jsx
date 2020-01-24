@@ -1,9 +1,16 @@
 import style from './style.scss';
+import video from "./hrushauka.mp4"
 
 const HistorySection = () => <section className={style['history-section']}>
     <h2>История событий</h2>
     <div className={style['history-section_container']}>
         <div className={style['history-section_tree']} />
+        <video
+            className={style['history-section_video']}
+            src={video}
+            autoPlay
+            loop
+        />
         <ul>
             <li className={style['history-section_item']}>В 2004 году был принят план детального проектирования района в границах пр.Дзержинского-пр.Жукова-ул.Железнодорожная, в котором содержались и границы Грушевского сквера.</li>
             <li className={style['history-section_item']}>В декабре 2008 скверу собственно было присвоено название Грушевский сквер.</li>
