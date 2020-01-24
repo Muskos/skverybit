@@ -1,5 +1,8 @@
 .external-link {
     color: #1967d2;
+    white-space: nowrap;
+    display: block;
+    overflow: hidden;
     &:active {
         color: #1967d2;
     }
