@@ -9,10 +9,17 @@ const HistorySection = () => {
     const videoEl = useRef(null);
 
     const playButton = () => {
-        setState({
-            isPlaying: true
-        })
-        videoEl.current.play();
+        if (state.isPlaying) {
+            setState({
+                isPlaying: false
+            })
+            videoEl.current.pause();
+        } else {
+            setState({
+                isPlaying: true
+            })
+            videoEl.current.play();
+        }
     }
 
     return <section className={style['history-section']}>
@@ -20,13 +27,16 @@ const HistorySection = () => {
         <div className={style['history-section_container']}>
             <div className={style['history-section_tree']} />
             <div className={style['history-section_video-container']}>
-                {!state.isPlaying && <button className={style['history-section_video-button']}></button>}
+                {!state.isPlaying && <button
+                    onClick={playButton}
+                    className={style['history-section_video-button']} />}
                 <video
                     ref={videoEl}
                     className={style['history-section_video']}
                     loop
-                    onClick={playButton}
                     muted
+                    playsInline
+                    onClick={playButton}
                 >
                     <source src={video} type="video/mp4" />
                 </video>
