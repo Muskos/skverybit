@@ -5,6 +5,30 @@ import style from './style.scss';
 const isDevelop = process.env.NODE_ENV === 'development';
 const news = [
     {
+        title: 'Грушевка будет каменной? Жители воюют за последний сквер: "Тут 1,2 кв м озелененности на человека, при норме в 8-10"',
+        linkTitle: 'Публикация о сквере в realt.by',
+        onClick: () => ym('reachGoal', 'open_link_realtby'),
+        href: 'https://realt.by/news/article/26594/',
+    },
+    {
+        title: 'Жители Грушевки ждут Наталью Кочанову: на деревьях в сквере появились необычные таблички',
+        linkTitle: 'Публикация о сквере в blizko.by',
+        onClick: () => ym('reachGoal', 'open_link_blizkoby'),
+        href: 'https://blizko.by/notes/zhiteli-grushevki-zhdut-natalyu-kochanovu-na-derevyah-v-skvere-poyavilis-neobychnye-tablichki',
+    },
+    {
+        title: 'Наталья Кочанова и глава Минска Анатолий Сивак прогулялись по Грушевскому скверу и сказали остановить вырубку деревьев',
+        linkTitle: 'Публикация о сквере в kp.by',
+        onClick: () => ym('reachGoal', 'open_link_kpby'),
+        href: 'https://www.kp.by/online/news/3744549/',
+    },
+    {
+        title: 'Грушевский сквер, новые детсады, снос: замглавы администрации Московского района пообщался с жителями о будущем Грушевки',
+        linkTitle: 'Публикация о сквере в minsknews.by',
+        onClick: () => ym('reachGoal', 'open_link_minsknewsby'),
+        href: 'https://minsknews.by/grushevskij-skver-novye-detsady-snos-zamglavy-administraczii-moskovskogo-rajona-poobshhalsya-s-zhitelyami-o-budushhem-grushevki/',
+    },
+    {
         title: '"Мы не хотим здесь эти 5 подъездов!" Местные жители отстаивают Грушевский сквер, но чиновники утверждают, что все "по закону"',
         linkTitle: 'Публикация о сквере в realt.by',
         onClick: () => ym('reachGoal', 'open_link_realtby'),
