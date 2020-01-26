@@ -27,6 +27,7 @@ const HistorySection = () => {
                     src={video}
                     loop
                     onClick={playButton}
+                    muted
                 />
             </div>
             <ul>

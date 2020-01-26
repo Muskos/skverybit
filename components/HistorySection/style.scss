@@ -25,6 +25,7 @@
     }
     &_video-container {
         position: relative;
+        margin-bottom: 40px;
     }
     &_video-button {
         position: absolute;
@@ -57,6 +58,5 @@
     }
     &_video {
         max-width: 100%;
-        margin-bottom: 40px;
     }
 }
