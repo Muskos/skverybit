@@ -24,11 +24,12 @@ const HistorySection = () => {
                 <video
                     ref={videoEl}
                     className={style['history-section_video']}
-                    src={video}
                     loop
                     onClick={playButton}
                     muted
-                />
+                >
+                    <source src={video} type="video/mp4" />
+                </video>
             </div>
             <ul>
                 <li className={style['history-section_item']}>В 2004 году был принят план детального проектирования района в границах пр.Дзержинского-пр.Жукова-ул.Железнодорожная, в котором содержались и границы Грушевского сквера.</li>
