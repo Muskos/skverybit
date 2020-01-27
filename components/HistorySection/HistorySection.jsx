@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import style from './style.scss';
+import poster from './poster.jpg';
 import video from "./hrushauka.mp4";
 
 const HistorySection = () => {
@@ -33,6 +34,7 @@ const HistorySection = () => {
                 <video
                     ref={videoEl}
                     className={style['history-section_video']}
+                    poster={poster}
                     loop
                     muted
                     playsInline
